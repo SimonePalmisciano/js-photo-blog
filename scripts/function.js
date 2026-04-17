@@ -14,7 +14,10 @@ function renderPhotoCards (photos) {
     
         const divHead = document.createElement('div');
         divHead.classList.add('card-head');
-        divHead.innerHTML = `<img src="${image}" alt="${title}">`;
+        divHead.innerHTML = `
+            <img src="${image}" alt="${title}">
+            <img id="pin" src="./img/pin.svg" alt="">
+        `;
     
         const divBody = document.createElement('div');
         divBody.classList.add('card-body');
