@@ -1,20 +1,12 @@
 // @ts-check
 'use strict';
 
-/**
- * 
- * @param {{'id': number, 'title':string, 'date':string, 'url':string}[]} photos 
- */
+/** * @param {{'id': number, 'title':string, 'date':string, 'url':string}[]} photos */
 function renderPhotoCards (photos) {
-    // salviamo i valori che ci servono del json in delle variabili
-    console.log(photos);
     for (const elem of photos) {
         const image = elem.url;
         const title = elem.title;
         const date = elem.date;
-        console.log(image);
-        console.log(title);
-        console.log(date);
         
         // bisogna creare le prima le card
         const divCard = document.createElement('div');
@@ -22,7 +14,7 @@ function renderPhotoCards (photos) {
     
         const divHead = document.createElement('div');
         divHead.classList.add('card-head');
-        divHead.innerHTML = `<img url="${image}" alt="${title}">`;
+        divHead.innerHTML = `<img src="${image}" alt="${title}">`;
     
         const divBody = document.createElement('div');
         divBody.classList.add('card-body');
