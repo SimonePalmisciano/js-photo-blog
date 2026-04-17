@@ -23,11 +23,12 @@ function renderPhotoCards (photos) {
         divBody.classList.add('card-body');
     
         const cardTitle = document.createElement('h5');
-        const cardText = document.createElement('p');
+        const cardDate = document.createElement('p');
         cardTitle.innerHTML = title;
-        cardText.innerHTML = date;
+        cardDate.innerHTML = date;
+
         divBody.appendChild(cardTitle);
-        divBody.appendChild(cardText);
+        divBody.appendChild(cardDate);
     
         divCard.appendChild(divHead);
         divCard.appendChild(divBody);
