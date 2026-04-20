@@ -12,11 +12,9 @@ if (loadingMsgElem !== null && errorMsgElem !== null) {
     loadingMsgElem.innerHTML = 'Caricamento';
     fetch(API_URL)
         .then(response => {
-            console.log(response);
             return response.json();
         })
         .then(jsonData => {
-            console.log(jsonData);
             renderPhotoCards(jsonData);
         })
         .catch(error => {
@@ -50,7 +48,6 @@ if (cardContainerElem !== null && modalOverlay !== null && modalImage instanceof
         if (!(mainImg instanceof HTMLImageElement)) {
             return;
         }
-        console.log(mainImg);
         
         modalImage.src = mainImg.src;
         modalImage.alt = mainImg.alt;
