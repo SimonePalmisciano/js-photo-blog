@@ -29,4 +29,23 @@ if (loadingMsgElem !== null && errorMsgElem !== null) {
             loadingMsgElem.innerHTML = '';
 
         })
+};
+
+const modalOverlay = document.querySelector('#modalOverlay');
+const modalCloseBtn = document.querySelector('#modalCloseBtn');
+const modalImage = document.querySelector('#modalImage');
+
+if (cardContainerElem !== null) {
+    cardContainerElem.addEventListener('click', (event) => {
+        const target = event.target
+
+        const cardEl = target.closest('.card');
+
+        if (!cardEl || !cardEl.contains(target)) {
+            return;
+        }
+
+        console.log(target);
+        
+    })
 }
