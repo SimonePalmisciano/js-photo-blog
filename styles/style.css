@@ -107,6 +107,16 @@ main {
     transform: translate(-45%, -30%);
 }
 
+/************************
+        MODALE
+************************/
+
+
+
+/************************
+        MEDIA QUERY
+************************/
+
 @media screen and (min-width: 800px) {
     .card {
         width: calc(100% / 2 - (20px) /2);

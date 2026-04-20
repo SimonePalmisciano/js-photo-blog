@@ -15,7 +15,7 @@ function renderPhotoCards (photos) {
         const divHead = document.createElement('div');
         divHead.classList.add('card-head');
         divHead.innerHTML = `
-            <img src="${image}" alt="${title}">
+            <img src="${image}" alt="${title}" class="modal-photo">
             <img id="pin" src="./img/pin.svg" alt="">
         `;
     

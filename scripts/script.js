@@ -41,11 +41,25 @@ if (cardContainerElem !== null) {
 
         const cardEl = target.closest('.card');
 
-        if (!cardEl || !cardEl.contains(target)) {
+        if (!cardEl) {
             return;
         }
 
-        console.log(target);
+        const mainImg = cardEl.querySelector('.modal-photo');
+
+        if (!(mainImg instanceof HTMLImageElement)) {
+            return;
+        }
+        console.log(mainImg);
         
+        modalImage.src = mainImg.src;
+        modalImage.alt = mainImg.alt;
+        modalOverlay.classList.remove('d-none');
     })
+}
+
+if (modalOverlay !== null && modalCloseBtn !== null) {
+    modalCloseBtn.addEventListener('click', () => {
+        modalOverlay.classList.add('d-none');
+    });
 }
