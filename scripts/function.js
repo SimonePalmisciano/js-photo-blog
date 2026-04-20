@@ -35,7 +35,6 @@ function renderPhotoCards (photos) {
     
         if (cardContainerElem !== null) {
             cardContainerElem.appendChild(divCard);
-            
         }
 
     }
