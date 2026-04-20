@@ -150,6 +150,15 @@ main {
 }
 
 /************************
+        EFFETTI
+************************/
+
+.card:hover {
+    transform: rotate(10deg) translateY(10px);
+    transition: transform 0.5s;
+}
+
+/************************
         MEDIA QUERY
 ************************/
 
