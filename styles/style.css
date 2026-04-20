@@ -133,7 +133,21 @@ main {
     position: relative;
 }
 
+.modal-close {
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -10%);
+    border: none;
+    background: transparent;
+    font-size: 50px;
+    line-height: 1;
+}
 
+.card {
+    cursor: pointer;
+}
 
 /************************
         MEDIA QUERY
