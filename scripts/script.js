@@ -35,7 +35,7 @@ const modalOverlay = document.querySelector('#modalOverlay');
 const modalCloseBtn = document.querySelector('#modalCloseBtn');
 const modalImage = document.querySelector('#modalImage');
 
-if (cardContainerElem !== null) {
+if (cardContainerElem !== null && modalOverlay !== null && modalImage instanceof HTMLImageElement) {
     cardContainerElem.addEventListener('click', (event) => {
         const target = event.target
 
